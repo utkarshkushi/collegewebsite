@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Untitled%20design.png);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+nav{ 
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+    
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12x;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    color: brown;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    text-align: center;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: brown;
+    border: 2px solid #000000;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 2px solid #fff;
+    background: #000000;
+    transition: 1s;
+}
+    
+/*------- course ------*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-size: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    
+}
+
+/*-----campus---*/
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+.campus-col img{
+    
+    width: 100%;
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+    
+    
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+ /*--facilities--*/
+
+.FACILITIES{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+    
+}
+.facilities-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    
+    
+}
+.facilities-col p{
+    padding: 0;
+    
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+ /*---testimonials---*/
+.Testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+.testimonials-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    
+}
+.testimonials-col img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 100%;
+
+}
+.testimonials-col p{
+    padding: 0;
+    
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+ /*---cta----*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/laun.png.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    
+}
+ 
+.cta h1{
+    margin-bottom: 20px;
+    padding: 0;
+    
+}
+.cta h1{
+    color: #ffffff;
+}
+
+/*-----footer-----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+ 
+
+/*----admission ----*/
+.admission{
+   
+     height: 50vh;
+     width: 100%;
+    text-align: center;
+}
+
+.registration {
+    display: flex;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 10px;
+    
+}
+.container .title{
+    font-size: 35px;
+    font-weight: 100;
+    position: relative;
+    
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:  linear-gradient(135deg,#71b7e6,#9b59b6);
+    
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin : 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+    
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+    
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+}
+
+/*----review---*/
+
+
+.review{
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+}
+.container form .user-views{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-views .input-box{
+    margin : 20px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+}
+.user-views .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+.user-views .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    
+}
+.user-views .input-box input:focus,
+.user-views .input-box input:valid{
+    border-color: #9b59b6;
+}
+    
+
+/*-----contact us-----*/
+
+.contact{
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+    
+}
+.location iframe{
+    width: 100%;
+    
+
+}
+.phone h2{
+    text-align: center;
+}
+
+
+
+
+.phone h3{
+    text-align: center;
+}
+
+.email h2{
+    text-align: center;
+}
+
+
+.email h3{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
